@@ -1,0 +1,216 @@
+/* Reset des styles par défaut */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #C7C5F4, #dfddee);
+}
+/* Styles du conteneur */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles de la barre d'outils du tableau */
+.table-toolbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Styles du bouton "Nouveau" */
+.btn-new {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-new1 {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles de la barre de recherche */
+.search-input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles du tableau de données */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #f0f0f0;
+}
+
+
+/*Popup*/
+/* Styles du popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 19rem;
+    /* Positionnement vertical au centre */
+    left: 0;
+    transform: translateY(-50%);
+    /* Ajustement pour centrer verticalement */
+    width: 100%;
+    /* Utilisation de max-height pour s'adapter au contenu */
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    animation: statut 1.0s forwards;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    /* Pour positionner le bouton de fermeture */
+}
+
+.statut {
+    position: fixed;
+    top: 20rem;
+    /* Positionnement vertical au centre */
+    left: 0;
+    transform: translateY(-50%);
+    /* Ajustement pour centrer verticalement */
+    width: 100%;
+    /* Utilisation de max-height pour s'adapter au contenu */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+@keyframes statut {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.success {
+    display: flex;
+    justify-content: center;
+}
+
+.success img {
+    width: 100px;
+    height: 100px;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup-content input[type="text"] {
+    width: calc(100% - 22px);
+    /* Ajustement pour la largeur de l'input */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content textarea {
+    width: calc(100% - 22px);
+    /* Ajustement pour la largeur de l'input */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    /* Couleur du bouton de fermeture */
+}
+
+.close-btn1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    /* Couleur du bouton de fermeture */
+}
+
+.close-btn2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    /* Couleur du bouton de fermeture */
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn img {
+    width: 30px;
+    height: 30px;
+}
+
+span{
+    color: red;
+}

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #c2c1da, #c7c2f1);
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #e0dff3;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart {
+    background-color: #e0dff3;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.chart:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 768px) {
+
+    .cards,
+    .charts {
+        flex-direction: column;
+    }
+
+    .card,
+    .chart {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.carte {
+    margin-left: 50px;
+}
+
+.user {
+    margin-top: 10px;
+    margin-left: 70px;
+    border: 1px solid;
+    width: 61%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px #242044;
+}
+.actuel{
+    margin-left: 40px;
+}
+
+.btn-new {
+    margin-left: 100px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 24px #242044;
+    border-radius: 10px;
+}
+
+.nom {
+    margin-left: 20px;
+}
+
+.imageUser {
+    width: 50px;
+    height: 50px;
+    margin-left: 100px;
+}
